@@ -1,0 +1,32 @@
+<div layout="column" ng-controller="helloCtrl">
+
+</div>
+<div layout="row">
+    <md-sidenav layout="column" class="md-whiteframe-z1" md-component-id="left" md-is-locked-open="$media('gt-sm')">
+
+        <div ng-controller="helloCtrl" class="filters_ct">
+            <md-content >
+                <md-list>
+                    <md-item  ng-repeat="item in items" ng-click="select($index)" ng-class="{sel: $index == selected}">
+                        <md-item-content ui-sref="main.friends.detail({id: item.id})">
+                            <div class="md-tile-left">
+                                <img ng-src="{{item.face}}" class="face" alt="{{item.who}} ">
+                            </div>
+                            <div class="md-tile-content" style="text-align:left">
+                                <h3>{{item.who}}</h3>
+                            </div>
+                        </md-item-content>
+                    </md-item>
+                </md-list>
+            </md-content>
+        </div>
+    </md-sidenav>
+
+
+    <div layout="column" flex md-theme="green" id="content">
+        <div layout="row" md-theme="green" class="md-whiteframe-z1 fullheight">
+
+            <div class="mid" ui-view></div>
+        </div>
+
+    </div>

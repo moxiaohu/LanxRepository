@@ -1,0 +1,19 @@
+.searchlist {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.searchselector{
+	width: 300px;
+	margin-top:20px;
+
+}
+.searchbutton{
+	width: 300px;
+	margin-top:20px;
+	background-color: #157ef4;
+	color: white
+
+}

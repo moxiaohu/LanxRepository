@@ -1,0 +1,56 @@
+<div layout="column" ng-controller="helloCtrl">
+
+</div>
+
+
+<div layout="column" flex md-theme="green" id="content" ng-controller="DemoCtrl">
+
+    <div class="searchlist">
+
+
+        <ui-select ng-model="mylanguages.selected" theme="bootstrap" ng-disabled="disabled" class="searchselector">
+            <ui-select-match placeholder="Select your native language ">{{$select.selected.name}}</ui-select-match>
+            <ui-select-choices repeat="selectedmylanguage in mylanguages | propsFilter: {name: $select.search}">
+                <div ng-bind-html="selectedmylanguage.name | highlight: $select.search"></div>
+
+            </ui-select-choices>
+        </ui-select>
+
+        <ui-select ng-model="learnlanguages.selected" theme="bootstrap" ng-disabled="disabled" class="searchselector">
+            <ui-select-match placeholder="Select your learning language ">{{$select.selected.name}}</ui-select-match>
+            <ui-select-choices repeat="selectedlearnlanguage in learnlanguages | propsFilter: {name: $select.search}">
+                <div ng-bind-html="selectedlearnlanguage.name | highlight: $select.search"></div>
+
+            </ui-select-choices>
+        </ui-select>
+
+
+        <ui-select ng-model="address.selected" theme="bootstrap" ng-disabled="disabled" reset-search-input="false" class="searchselector">
+            <ui-select-match placeholder="Enter an address...">{{$select.selected.formatted_address}}</ui-select-match>
+            <ui-select-choices repeat="address in addresses track by $index" refresh="refreshAddresses($select.search)" refresh-delay="0">
+                <div ng-bind-html="address.formatted_address | highlight: $select.search"></div>
+            </ui-select-choices>
+        </ui-select>
+
+        <ui-select ng-model="ages.selected" theme="bootstrap" ng-disabled="disabled" class="searchselector">
+            <ui-select-match placeholder="Select the age ">{{$select.selected.age}}</ui-select-match>
+            <ui-select-choices repeat="age in ages | propsFilter: {age: $select.search}">
+                <div ng-bind-html="age.age | highlight: $select.search"></div>
+
+            </ui-select-choices>
+        </ui-select>
+
+        <ui-select ng-model="genders.selected" theme="bootstrap" ng-disabled="disabled" class="searchselector">
+            <ui-select-match placeholder="Select the gender ">{{$select.selected.gender}}</ui-select-match>
+            <ui-select-choices repeat="gender in genders | propsFilter: {gender: $select.search}">
+                <div ng-bind-html="gender.gender | highlight: $select.search"></div>
+
+            </ui-select-choices>
+        </ui-select>
+
+        <md-button style="margin-bottom:10%" class="md-raised md-primary searchbutton">Search</md-button>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,73 @@
+.bottom-line {
+    border-width: 1px;
+    border-bottom-style: solid;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-right: 40%;
+}
+
+.member-bottom-line {
+    border-width: 1px;
+    border-bottom-style: solid;
+    margin-top: 2%;
+    margin-right: 20%;
+}
+.profile-container {
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 10%;
+}
+.members-container {
+    width: 100%;
+    margin-left: 20%;
+}
+
+.setting-container {
+	margin-top: 10%;
+    width: 100%;
+    margin-left: 20%;
+}
+.inline {
+    display: inline-block;
+}
+
+.groupname{
+	font-size: 100px;
+
+}
+
+.image-inline{
+	    display: inline-block;
+	    margin-left: 10%
+}
+.membermargin{
+	margin-left: 14%;
+}
+
+.margin-bottom{
+	margin-bottom: 5%;
+}
+
+.membertitle-margin{
+		margin-left: 12%;
+}
+.group-imgsize {
+    height: 200px;
+    width: 300px;
+}
+
+.center{
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto
+}
+
+

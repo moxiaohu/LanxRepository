@@ -1,0 +1,25 @@
+#love_in_paris_fond {
+    color: #414467;
+    font-size: 10px;
+    border-bottom-width: thin;
+}
+#XCourse_team_fond {
+    color: #dddddd;
+    font-size: 10px;
+}
+#margin_height_500px {
+    margin-top: 500px;
+}
+#margin_height_680px {
+    margin-top: 670px;
+}
+#margin_bottom {
+    margin-bottom: 200px;
+}
+#div_height {
+    height: 200px
+}
+.imgsize {
+    height: 200px;
+    width: 200px;
+}

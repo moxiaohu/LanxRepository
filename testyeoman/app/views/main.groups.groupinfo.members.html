@@ -1,0 +1,45 @@
+<div class="row members-container">
+    <div class="column">
+        <P class=" groupname">{{selectedGroup.groupname}}</P>
+    </div>
+    <div class="column"></div>
+    <div class="image-inline">
+        <img class="imagesize" ng-src="{{selectedGroup.groupface}}" />
+    </div>
+</div>
+
+<div class="row"></div>
+
+
+
+
+<div class="members-container bottom-line">
+    <md-content>
+        <md-list>
+            <md-item>
+                <md-item-content>
+
+                    <div class="membertitle-margin">NickName</div>
+                    <div class="membertitle-margin">Gender</div>
+                    <div class="membertitle-margin">Last Messages</div>
+                </md-item-content>
+            </md-item>
+        </md-list>
+    </md-content>
+
+</div>
+<div class="members-container">
+    <md-content>
+        <md-list>
+            <md-item ng-repeat="member in selectedGroup.members">
+                <md-item-content class="member-bottom-line">
+                    <div class="md-tile-left">
+                        <img ng-src="{{member.groupface}}" class="face">
+                    </div>
+                    <div class="membermargin">{{member.name}}</div>
+                    <div class="membermargin">{{member.gender}}</div>
+                    <div class="membermargin">{{member.lastMessage}}</div>
+                </md-item-content>
+            </md-item>
+        </md-list>
+    </md-content>

@@ -1,0 +1,30 @@
+<div class="profile-container">
+
+    <div class="row">
+        <div class="colomn">
+            <div>
+                <div class="groupname inline"> {{selectedGroup.groupname}}</div>
+
+
+            </div>
+
+
+            <div class="bottom-line">group member</div>
+
+            <div ng-repeat="member in selectedGroup.members" class="inline">
+                <img ng-src="{{member.groupface}}" style="width=" 40 " height="40 "" />
+            </div>
+
+            <div class="bottom-line">Info</div>
+            <div>{{selectedGroup.groupInfo}}</div>
+        </div>
+
+        <div class="column" style="margin-left:20%">
+            <div>
+                <img class="group-imgsize" ng-src="{{selectedGroup.groupface}}" />
+            </div>
+        </div>
+
+    </div>
+
+</div>
